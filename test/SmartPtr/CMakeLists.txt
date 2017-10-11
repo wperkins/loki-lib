@@ -3,7 +3,7 @@
 # -------------------------------------------------------------
 # -------------------------------------------------------------
 # Created October 11, 2017 by Perkins
-# Last Change: 2017-10-11 09:30:55 d3g096
+# Last Change: 2017-10-11 10:40:42 d3g096
 # -------------------------------------------------------------
 
 add_executable(SmartPtrTest
@@ -13,3 +13,6 @@ add_executable(SmartPtrTest
   colvin_gibbons_trick.cpp
   )
 target_link_libraries(SmartPtrTest loki)
+
+# This hangs
+loki_add_run_test(SmartPtr SmartPtrTest)
